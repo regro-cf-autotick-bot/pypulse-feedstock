@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -20,14 +20,14 @@ requirements:
     - pip
     - numpy >=1.16.3
     - matplotlib-base
-    - astropy
+    - astropy-base
     - scipy >=1.2.0
   run:
     - python >=3.8
     - numpy >=1.16.3
     - scipy >=1.2.0
     - matplotlib-base
-    - astropy
+    - astropy-base
 
 test:
   imports:
